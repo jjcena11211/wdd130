@@ -1,3 +1,20 @@
+header {
+    background-color: #245eca;
+    padding: 10px;
+}
+
+nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
 main {
     max-width: 840px;
 }
@@ -8,6 +25,10 @@ main img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+}
+
+h1 {
+    color: steelblue;
 }
 
 body {
