@@ -1,63 +1,75 @@
-header {
-    background-color: #245eca;
-    padding: 4px;
-}
+:root {
+    --primary-color: #245eca;
+    --dark-color: #333;
+    --light-color: #ddd;
+    --accent-color: steelblue;
+    --white-color: white;
+    --black-color: #000;
+    --shadow-color: gray;
+    --border-color: rgb(0 0 0 / 0.2);
+    --base-spacing: 1rem;
+    --base-font-size: 20px;
 
-nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-}
+    header {
+        background-color: var(--primary-color);
+        padding: 4px;
+    }
 
-nav a {
-    color: white;
-    padding: 10px;
-    display: block;
-}
+    nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: var(--dark-color);
+    }
 
-main {
-    max-width: 840px;
-}
+    nav a {
+        color: var(--white-color);
+        padding: 10px;
+        display: block;
+    }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
+    main {
+        max-width: 840px;
+    }
 
-h1 {
-    color: steelblue;
-}
+    main img {
+        width: 150px;
+        height: auto;
+        border: 1px solid var(--accent-color);
+        padding: 2px;
+        box-shadow: 0 0 30px var(--shadow-color);
+    }
 
-body {
-    font-size: 20px;
-    margin: 1rem;
-}
+    h1 {
+        color: var(--accent-color);
+    }
 
-aside {
-    width: 20rem;
-    margin: 1rem auto;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #333;
-    text-align: center;
-}
+    body {
+        font-size: var(--base-font-size);
+        margin: var(--base-spacing);
+    }
 
-aside img {
-    width: 200px;
-    height: auto;
-}
+    aside {
+        width: 20rem;
+        margin: var(--base-spacing) auto;
+        border: 1px solid var(--border-color);
+        padding: var(--base-spacing);
+        background-color: var(--light-color);
+        color: var(--dark-color);
+        text-align: center;
+    }
 
-p {
-    padding: 0;
-}
+    aside img {
+        width: 200px;
+        height: auto;
+    }
 
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-}
+    p {
+        padding: 0;
+    }
+
+    footer {
+        margin-top: 15px;
+        border-top: 1px solid var(--black-color);
+        text-align: center;
+    }
