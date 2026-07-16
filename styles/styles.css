@@ -9,67 +9,92 @@
     --border-color: rgb(0 0 0 / 0.2);
     --base-spacing: 1rem;
     --base-font-size: 20px;
+}
 
-    header {
-        background-color: var(--primary-color);
-        padding: 4px;
-    }
+header {
+    background-color: var(--primary-color);
+    padding: 4px;
+}
 
-    nav {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        background-color: var(--dark-color);
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    nav a {
-        color: var(--white-color);
-        padding: 10px;
-        display: block;
-    }
+nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-color);
+}
 
-    main {
-        max-width: 840px;
-    }
+nav a {
+    color: var(--white-color);
+    padding: 10px;
+    display: block;
+}
 
-    main img {
-        width: 150px;
-        height: auto;
-        border: 1px solid var(--accent-color);
-        padding: 2px;
-        box-shadow: 0 0 30px var(--shadow-color);
-    }
+main {
+    max-width: 840px;
+}
 
-    h1 {
-        color: var(--accent-color);
-    }
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid var(--accent-color);
+    padding: 2px;
+    box-shadow: 0 0 30px var(--shadow-color);
+    float: right;
+}
 
-    body {
-        font-size: var(--base-font-size);
-        margin: var(--base-spacing);
-    }
+h1 {
+    color: var(--accent-color);
+}
 
-    aside {
-        width: 20rem;
-        margin: var(--base-spacing) auto;
-        border: 1px solid var(--border-color);
-        padding: var(--base-spacing);
-        background-color: var(--light-color);
-        color: var(--dark-color);
-        text-align: center;
-    }
+body {
+    font-size: var(--base-font-size);
+    margin: var(--base-spacing);
+}
 
-    aside img {
-        width: 200px;
-        height: auto;
-    }
+aside {
+    width: 20rem;
+    margin: var(--base-spacing) auto;
+    border: 1px solid var(--border-color);
+    padding: var(--base-spacing);
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    text-align: center;
+    position: relative;
+}
 
-    p {
-        padding: 0;
-    }
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
 
-    footer {
-        margin-top: 15px;
-        border-top: 1px solid var(--black-color);
-        text-align: center;
-    }
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid var(--black-color);
+    text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
