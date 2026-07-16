@@ -52,19 +52,20 @@ header img.logo {
     margin: 15px 0 5px 20px;
 }
 
-nav ul {
-    list-style: disc inside;
-    padding-left: 20px;
+nav a {
+    margin-right: 12px;
 }
 
-nav li {
-    margin: 2px 0;
+nav a:hover {
+    color: var(--accent1-color);
+    text-decoration: underline;
 }
 
 /* section headings */
 
 h2 {
     background-color: var(--primary-color);
+    border-bottom: 4px solid var(--accent1-color);
     text-align: center;
     padding: 18px 20px;
     letter-spacing: 1px;
@@ -83,7 +84,7 @@ footer .socialmedia a {
 }
 
 footer {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--secondary-color);
     padding-top: 15px;
 }
 
